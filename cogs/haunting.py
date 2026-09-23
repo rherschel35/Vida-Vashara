@@ -44,7 +44,7 @@ def _parse_channel_ids(env_value: str | None):
 # unmistakably a call for her specifically - someone unwell, someone who
 # can't sleep. Nothing overlapping the other ghosts' words.
 KEYWORD_TRIGGERS = {
-    "vida": (1.0, "Someone said your name. Turn your attention to them, gently and fully - warm, unhurried, the way you always do."),
+    "vida": (1.0, "Someone said your name. Light up and turn your attention to them, warmly and fully - the way you always do."),
     "i don't feel well": (1.0, "Someone just said they don't feel well. This is exactly what draws you - go to them, in your own quiet way, and ask after them properly."),
     "can't sleep": (1.0, "Someone said they can't sleep. Offer the kind of company that makes a quiet room feel less empty - no fuss, no lecture, just presence."),
 }
@@ -181,7 +181,7 @@ class Haunting(commands.Cog):
         elif tended and random.random() < 0.35:
             cue = (
                 f"You've been quietly keeping an eye on {author_name} lately - someone you're tending to. "
-                f'They just said: "{content}". Notice it the way you always do: warm, unhurried, never '
+                f'They just said: "{content}". Notice it the way you always do: warm and bright, never '
                 "intrusive, never clinical."
             )
         elif random.random() < 0.01:

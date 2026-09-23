@@ -83,7 +83,7 @@ class GhostCommands(commands.Cog):
 
         cue = (
             f"You've just been asked to look in on {member.display_name} for a while - to notice how "
-            "they're actually doing. Announce it in character: quiet, unhurried, entirely without fuss. "
+            "they're actually doing. Announce it in character: warm, delighted to have a reason to check in, entirely without fuss. "
             "This is simply what you do."
         )
         line = await personality.speak(cue, max_tokens=150)
